@@ -1,5 +1,13 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
+<ul>
+    {{#each model as |personnage|}}
+      <img src={{personnage.imgurl}}/>
+      <li>{{personnage.title}}</li>
+      <li>{{personnage.id}}</li>
+      <li>{{personnage.description}}</li>
+      <li>Age: {{personnage.age}}</li>
+      <li>Job: {{personnage.job}}</li>
+      <li>Creation: {{personnage.createdAt}}</li>
+      <li>Update: {{personnage.updatedAt}}</li>
+    {{/each}}
+</ul>
 {{outlet}}
