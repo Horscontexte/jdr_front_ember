@@ -1,22 +1,7 @@
-<!-- <ul>
-    {{#each model as |personnage|}}
-      <img src={{personnage.imgurl}}/>
-      <li>{{personnage.title}}</li>
-      <li>{{personnage.id}}</li>
-      <li>{{personnage.description}}</li>
-      <li>Age: {{personnage.age}}</li>
-      <li>Job: {{personnage.job}}</li>
-      <li>Creation: {{personnage.createdAt}}</li>
-      <li>Update: {{personnage.updatedAt}}</li>
-      {{personnage.stats.app}}
-      {{personnage.stats.dex}}
-    {{/each}}
-</ul> -->
-{{#each model as |lieu|}}
-  <img src={{lieu.imgurl}}/>
-  <li>{{lieu.title}}</li>
-  <li>{{lieu.id}}</li>
-  <li>{{lieu.histoire}}</li>
-{{/each}}
-
+<nav>
+  <ul>
+    <li>{{#link-to "personnage"}}Personnage{{/link-to}}</li>
+    <li>{{#link-to "lieu"}}Lieu{{/link-to}}</li>
+  </ul>
+</nav>
 {{outlet}}
