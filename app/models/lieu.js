@@ -2,12 +2,11 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   title: DS.attr('string'),
-  description: DS.attr('string'),
-  age: DS.attr('number'),
-  job: DS.attr('string'),
+  histoire: DS.attr('string'),
+  climat: DS.attr('string'),
+  howto: DS.attr('string'),
   imgurl: DS.attr('string'),
-  stats: DS.attr(),
+  hotstop: DS.attr('string'),
   createdAt: DS.attr('date'),
-  updatedAt: DS.attr('date'),
-
+  updatedAt: DS.attr('date')
 });

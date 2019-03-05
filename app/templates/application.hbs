@@ -8,6 +8,8 @@
       <li>Job: {{personnage.job}}</li>
       <li>Creation: {{personnage.createdAt}}</li>
       <li>Update: {{personnage.updatedAt}}</li>
+      {{personnage.stats.app}}
+      {{personnage.stats.dex}}
     {{/each}}
 </ul>
 {{outlet}}
