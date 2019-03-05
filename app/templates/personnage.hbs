@@ -1,4 +1,4 @@
-<!-- <ul>
+<ul>
     {{#each model as |personnage|}}
       <img src={{personnage.imgurl}}/>
       <li>{{personnage.title}}</li>
@@ -11,12 +11,6 @@
       {{personnage.stats.app}}
       {{personnage.stats.dex}}
     {{/each}}
-</ul> -->
-{{#each model as |lieu|}}
-  <img src={{lieu.imgurl}}/>
-  <li>{{lieu.title}}</li>
-  <li>{{lieu.id}}</li>
-  <li>{{lieu.histoire}}</li>
-{{/each}}
+</ul>
 
 {{outlet}}
