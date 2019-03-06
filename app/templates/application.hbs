@@ -9,14 +9,14 @@
 
 <!--johanna -->
 
+{{#paper-list}}
 {{#paper-toolbar}}
-  <div class="md-toolbar-tools">
-    {{#paper-button }}{{#link-to "personnage"}}Personnage{{/link-to}}{{/paper-button}}
-    {{#paper-button }}{{#link-to "lieu"}}Lieu{{/link-to}}{{/paper-button}}
+  <div class="md-toolbar-tools colorNav">
+  {{#link-to "personnage"}}{{#paper-button }}Personnage{{/paper-button}}{{/link-to}}
+  {{#link-to "lieu"}}{{#paper-button }}Lieu{{/paper-button}}{{/link-to}}
   </div>
 {{/paper-toolbar}}
-
-
+{{/paper-list}}
 
 <!--Fin johanna -->
 {{outlet}}
