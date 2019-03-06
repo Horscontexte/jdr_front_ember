@@ -1,16 +1,45 @@
+<!--
 <ul>
     {{#each model as |personnage|}}
-      <img src={{personnage.imgurl}}/>
-      <li>{{personnage.title}}</li>
-      <li>{{personnage.id}}</li>
-      <li>{{personnage.description}}</li>
-      <li>Age: {{personnage.age}}</li>
-      <li>Job: {{personnage.job}}</li>
+  *    <img src={{personnage.imgurl}}/>
+  *    <li>{{personnage.title}}</li>
+  *    <li>{{personnage.id}}</li>
+  *    <li>{{personnage.description}}</li>
+  *    <li>Age: {{personnage.age}}</li>
+  *    <li>Job: {{personnage.job}}</li>
       <li>Creation: {{personnage.createdAt}}</li>
       <li>Update: {{personnage.updatedAt}}</li>
       {{personnage.stats.app}}
       {{personnage.stats.dex}}
     {{/each}}
 </ul>
+ -->
+
+
+<!--johanna -->
+<div style="background-color: burlywood;">
+{{#each model as |personnage|}}
+  {{#paper-card as |card|}}
+     {{#card.title as |title|}}
+       {{#title.text as |text|}}
+         {{#text.headline}}<h3>{{personnage.title}}</h3>{{/text.headline}}
+         {{#text.subhead}}
+           <p>id : {{personnage.id}}</p>
+           <p>{{personnage.description}}</p>
+           <p>Age: {{personnage.age}}</p>
+           <p>Job: {{personnage.job}}</p>
+         {{/text.subhead}}
+       {{/title.text}}
+       {{#title.media size="md"}}
+          <img class="card-media" src={{personnage.imgurl}}/>
+        {{/title.media}}
+     {{/card.title}}
+     {{#card.actions}}
+       {{#paper-button}}Action 1{{/paper-button}}
+     {{/card.actions}}
+   {{/paper-card}}
+{{/each}}
+</div>
+<!--Fin johanna -->
 
 {{outlet}}
