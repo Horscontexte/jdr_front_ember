@@ -1,7 +1,29 @@
+<!--
 <nav>
   <ul>
     <li>{{#link-to "personnage"}}Personnage{{/link-to}}</li>
     <li>{{#link-to "lieu"}}Lieu{{/link-to}}</li>
   </ul>
 </nav>
+-->
+
+<!--johanna -->
+
+{{#paper-sidenav
+   class="md-whiteframe-z2"
+   name="right"
+   position="right"}}
+  {{#paper-toolbar as |toolbar|}}
+   <nav>
+     <ul>
+       <li>{{#link-to "personnage"}}Personnage{{/link-to}}</li>
+       <li>{{#link-to "lieu"}}Lieu{{/link-to}}</li>
+     </ul>
+   </nav>
+  {{/paper-toolbar}}
+{{/paper-sidenav}}
+
+
+
+<!--Fin johanna -->
 {{outlet}}

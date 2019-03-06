@@ -18,27 +18,29 @@
 
 <!--johanna -->
 <div style="background-color: burlywood;">
-{{#each model as |personnage|}}
-  {{#paper-card as |card|}}
-     {{#card.title as |title|}}
-       {{#title.text as |text|}}
-         {{#text.headline}}<h3>{{personnage.title}}</h3>{{/text.headline}}
-         {{#text.subhead}}
-           <p>id : {{personnage.id}}</p>
-           <p>{{personnage.description}}</p>
-           <p>Age: {{personnage.age}}</p>
-           <p>Job: {{personnage.job}}</p>
-         {{/text.subhead}}
-       {{/title.text}}
-       {{#title.media size="md"}}
+
+  {{#each model as |personnage|}}
+    {{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}<h3>{{personnage.title}}</h3>{{/text.headline}}
+          {{#text.subhead}}
+            <p>id : {{personnage.id}}</p>
+            <p>{{personnage.description}}</p>
+            <p>Age: {{personnage.age}}</p>
+            <p>Job: {{personnage.job}}</p>
+          {{/text.subhead}}
+        {{/title.text}}
+        {{#title.media size="md"}}
           <img class="card-media" src={{personnage.imgurl}}/>
         {{/title.media}}
      {{/card.title}}
      {{#card.actions}}
-       {{#paper-button}}Action 1{{/paper-button}}
+       {{#paper-button}}Details{{/paper-button}}
      {{/card.actions}}
-   {{/paper-card}}
-{{/each}}
+    {{/paper-card}}
+  {{/each}}
+
 </div>
 <!--Fin johanna -->
 
