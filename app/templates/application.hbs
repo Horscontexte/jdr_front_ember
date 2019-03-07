@@ -7,16 +7,32 @@
 </nav>
 -->
 
-<!--johanna -->
 
-{{#paper-list}}
-{{#paper-toolbar}}
-  <div class="md-toolbar-tools colorNav">
-  {{#link-to "personnage"}}{{#paper-button }}Personnage{{/paper-button}}{{/link-to}}
-  {{#link-to "lieu"}}{{#paper-button }}Lieu{{/paper-button}}{{/link-to}}
-  </div>
-{{/paper-toolbar}}
-{{/paper-list}}
+<!--johanna
+
+{{#paper-content class="menuNav" open=rightSideBarOpen lockedOpen=true}}
+  <aside class="flexmoiça  md-toolbar-tools">
+    <li>{{#link-to "personnage"}} {{#paper-button }}{{paper-icon 'home'}}Personnage{{/paper-button}}{{/link-to}}</li>
+    <li>{{#link-to "lieu"}} {{#paper-button }}{{paper-icon 'home'}}Lieu{{/paper-button}}{{/link-to}}</li>
+  </aside>
+{{/paper-content}}
+
+-->
+
+
+<aside class="menuNav">
+  <ul class="flexmoiça">
+
+    <li>{{#link-to "personnage"}} {{#paper-button }}{{paper-icon 'home'}}Personnage{{/paper-button}}{{/link-to}}</li>
+    <li>{{#link-to "lieu"}} {{#paper-button }}{{paper-icon 'home'}}Lieu{{/paper-button}}{{/link-to}}</li>
+    <li>{{#link-to "lieu"}} {{#paper-button }}{{paper-icon 'home'}}Lieu{{/paper-button}}{{/link-to}}</li>
+    <li>{{#link-to "lieu"}} {{#paper-button }}{{paper-icon 'home'}}Lieu{{/paper-button}}{{/link-to}}</li>
+    <li>{{#link-to "lieu"}} {{#paper-button }}{{paper-icon 'home'}}Lieu{{/paper-button}}{{/link-to}}</li>
+
+  </ul>
+</aside>
+
 
 <!--Fin johanna -->
+
 {{outlet}}

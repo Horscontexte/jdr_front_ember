@@ -3,16 +3,37 @@
 
 /** Johanna **/
 
-.colorNav {
-  background-color: #ff984e;
-}
-/**
-.bg-pers {
-background-color: #63ab97;
-}
-**/
 body {
 background-color: #abdad8;
 }
+/**Nav**/
+
+.menuNav {
+float: right;
+display: flex;
+flex-direction: column;
+height: 100%;
+max-width: 200px;
+background-color: #fbbc97;
+margin: 4px;
+}
+
+.flexmoiça {
+  text-align: center;
+  flex-direction: column;
+  height: 100%;
+  margin: 5px;
+color: red;
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+
+}
+
+/**Perso**/
+
+
 
 /** Fin Johanna **/
