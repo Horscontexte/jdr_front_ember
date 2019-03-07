@@ -1,0 +1,21 @@
+<div>
+    {{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}<h3>{{this.model.title}}</h3>{{/text.headline}}
+          {{#text.subhead}}
+            <p>id : {{this.model.id}}</p>
+            <p>{{this.model.description}}</p>
+            <p>Age: {{this.model.age}}</p>
+            <p>Job: {{this.model.job}}</p>
+          {{/text.subhead}}
+        {{/title.text}}
+        {{#title.media size="md"}}
+          <img class="card-media" src={{this.model.imgurl}}/>
+        {{/title.media}}
+     {{/card.title}}
+     {{#card.actions}}
+       {{#paper-button}}{{#link-to "personnage.index"}}Retour{{/link-to}}{{/paper-button}}
+     {{/card.actions}}
+    {{/paper-card}}
+</div>

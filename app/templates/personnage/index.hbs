@@ -1,20 +1,3 @@
-<!--
-<ul>
-    {{#each model as |personnage|}}
-  *    <img src={{personnage.imgurl}}/>
-  *    <li>{{personnage.title}}</li>
-  *    <li>{{personnage.id}}</li>
-  *    <li>{{personnage.description}}</li>
-  *    <li>Age: {{personnage.age}}</li>
-  *    <li>Job: {{personnage.job}}</li>
-      <li>Creation: {{personnage.createdAt}}</li>
-      <li>Update: {{personnage.updatedAt}}</li>
-      {{personnage.stats.app}}
-      {{personnage.stats.dex}}
-    {{/each}}
-</ul>
- -->
-
 <!--johanna -->
 <div>
 
@@ -35,7 +18,7 @@
         {{/title.media}}
      {{/card.title}}
      {{#card.actions}}
-       {{#paper-button}}Details{{/paper-button}}
+       {{#paper-button}}{{#link-to "personnage.show" personnage class=personnage.id}}Details{{/link-to}}{{/paper-button}}
      {{/card.actions}}
     {{/paper-card}}
   {{/each}}
