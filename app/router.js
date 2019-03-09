@@ -7,8 +7,18 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('personnage');
-  this.route('lieu');
+  this.route('lieu', function() {
+    this.route('show', {path: '/:lieu_id'});
+  });
+  this.route('document', function() {
+    this.route('show', {path: '/:document_id'});
+  });
+  this.route('joueur', function() {
+    this.route('show', {path: '/joueur_id'});
+  });
+  this.route('personnage', function() {
+    this.route('show', {path: '/:personnage_id'});
+  });
 });
 
 export default Router;

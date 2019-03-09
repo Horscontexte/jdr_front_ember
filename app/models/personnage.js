@@ -9,5 +9,5 @@ export default DS.Model.extend({
   stats: DS.attr(),
   createdAt: DS.attr('date'),
   updatedAt: DS.attr('date'),
-
+  publish: DS.attr('boolean')
 });

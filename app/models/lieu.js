@@ -8,5 +8,6 @@ export default DS.Model.extend({
   imgurl: DS.attr('string'),
   hotstop: DS.attr('string'),
   createdAt: DS.attr('date'),
-  updatedAt: DS.attr('date')
+  updatedAt: DS.attr('date'),
+  publish: DS.attr('boolean'),
 });
