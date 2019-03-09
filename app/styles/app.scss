@@ -1,16 +1,21 @@
 @import 'ember-paper';
 
-
 /** Johanna **/
 body {
 background-color: #b1b1b1;
 }
 /**Nav**/
+.nav {
+  background-image: url("/img/4224.jpg");
+  height: 185px;
+  background-size: cover;
+}
 
 .flexmoiça {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .navImg1, .navImg2,
@@ -25,29 +30,29 @@ background-color: #b1b1b1;
 }
 
 .navImg1 {
-background-image: url("/img/1.png");
+background-image: url("/img/new/11.png");
 }
 .navImg2 {
-background-image: url("/img/2.png");
+background-image: url("/img/new/22.png");
 }
 .navImg3 {
-background-image: url("/img/3.png");
+background-image: url("/img/new/33.png");
 }
 .navImg4 {
-background-image: url("/img/4.png");
+background-image: url("/img/new/44.png");
 }
 
 .navImg1:hover {
-background-image: url("/img/11.png");
+background-image: url("/img/new/1.png");
 }
 .navImg2:hover {
-background-image: url("/img/22.png");
+background-image: url("/img/new/2.png");
 }
 .navImg3:hover {
-background-image: url("/img/33.png");
+background-image: url("/img/new/3.png");
 }
 .navImg4:hover {
-background-image: url("/img/44.png");
+background-image: url("/img/new/4.png");
 }
 /**Personnage**/
 
