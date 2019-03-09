@@ -1,29 +1,25 @@
-<!--johanna -->
-<div>
-
-  {{#each model as |personnage|}}
-    {{#paper-card as |card|}}
-      {{#card.title as |title|}}
-        {{#title.text as |text|}}
-          {{#text.headline}}<h3>{{personnage.title}}</h3>{{/text.headline}}
-          {{#text.subhead}}
-            <p>id : {{personnage.id}}</p>
-            <p>{{personnage.description}}</p>
-            <p>Age: {{personnage.age}}</p>
-            <p>Job: {{personnage.job}}</p>
-          {{/text.subhead}}
-        {{/title.text}}
-        {{#title.media size="md"}}
-          <img class="card-media" src={{personnage.imgurl}}/>
-        {{/title.media}}
-     {{/card.title}}
-     {{#card.actions}}
-       {{#paper-button}}{{#link-to "personnage.show" personnage class=personnage.id}}Details{{/link-to}}{{/paper-button}}
-     {{/card.actions}}
-    {{/paper-card}}
+<!-- {{#paper-list}}
+  {{#each model as |item|}}
+    {{#paper-item class="md-3-line"}}
+      {{#link-to "personnage.show" item class=item.id}}<img src={{item.imgurl}} alt={{item.title}} class="md-avatar">{{/link-to}}
+      <div class="md-list-item-text">
+        <h3>{{item.title}}</h3>
+        <p>{{item.job}}</p>
+      </div>
+    {{/paper-item}}
   {{/each}}
-
-</div>
-<!--Fin johanna -->
-
-{{outlet}}
+{{/paper-list}} -->
+{{#paper-list}}
+{{#paper-subheader}}Agenda / Personnages (pnj){{/paper-subheader}}
+  {{#each model as |item|}}
+    {{#paper-item class="md-3-line" onClick=(action "transitionTo" item)}}
+    <img src={{item.imgurl}} alt={{item.title}} class="md-avatar">
+    {{#link-to "personnage.show" item class=item.id}}
+      <div class="md-list-item-text">
+        <h3>{{item.title}}</h3>
+        <p>{{item.job}}</p>
+      </div>
+    {{/link-to}}
+    {{/paper-item}}
+  {{/each}}
+{{/paper-list}}
