@@ -5,17 +5,10 @@ body {
 background-color: #b1b1b1;
 }
 /**Nav**/
-.nav {
+.textureNav {
   background-image: url("/img/4224.jpg");
-  height: 185px;
+  height: 200px;
   background-size: cover;
-}
-
-.flexmoiça {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
 }
 
 .navImg1, .navImg2,
@@ -54,7 +47,6 @@ background-image: url("/img/new/3.png");
 .navImg4:hover {
 background-image: url("/img/new/4.png");
 }
-/**Personnage**/
 
 
 /** Fin Johanna **/
