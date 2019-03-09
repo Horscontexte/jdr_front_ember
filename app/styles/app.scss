@@ -18,54 +18,41 @@ text-align: center;
   align-content: center;
 }
 
+.navImg1, .navImg2,
+.navImg3, .navImg4,
+.navImg1:active, .navImg2:active,
+.navImg3:active , .navImg4:active
+ {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+  width: 200px;
+}
+
 .navImg1 {
 background-image: url("/img/1.png");
-background-size: contain;
-height: 200px;
-width: 200px;
 }
 .navImg2 {
 background-image: url("/img/2.png");
-background-size: contain;
-height: 200px;
-width: 200px;
 }
 .navImg3 {
 background-image: url("/img/3.png");
-background-size: contain;
-height: 200px;
-width: 200px;
 }
 .navImg4 {
 background-image: url("/img/4.png");
-background-size: contain;
-height: 200px;
-width: 200px;
 }
 
 .navImg1:active {
-background: url("/img/11.png");
-background-size: contain;
-height: 200px;
-width: 200px;
+background-image: url("/img/11.png");
 }
 .navImg2:active {
-background: url("/img/22.png");
-background-size: contain;
-height: 200px;
-width: 200px;
+background-image: url("/img/22.png");
 }
 .navImg3:active {
-background: url("/img/33.png");
-background-size: contain;
-height: 200px;
-width: 200px;
+background-image: url("/img/33.png");
 }
 .navImg4:active {
-background: url("/img/44.png");
-background-size: contain;
-height: 200px;
-width: 200px;
+background-image: url("/img/44.png");
 }
 /**Personnage**/
 
