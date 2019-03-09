@@ -2,38 +2,72 @@
 
 
 /** Johanna **/
-
 body {
 background-color: #abdad8;
 }
 /**Nav**/
 
 .menuNav {
-float: right;
 display: flex;
-flex-direction: column;
-height: 100%;
-max-width: 200px;
-background-color: #fbbc97;
-margin: 4px;
+text-align: center;
 }
 
 .flexmoiça {
+  display: flex;
   text-align: center;
-  flex-direction: column;
-  height: 100%;
-  margin: 5px;
-color: red;
+  align-content: center;
 }
 
-li {
-  list-style-type: none;
-  text-decoration: none;
-
+.navImg1 {
+background-image: url("/img/1.png");
+background-size: contain;
+height: 200px;
+width: 200px;
+}
+.navImg2 {
+background-image: url("/img/2.png");
+background-size: contain;
+height: 200px;
+width: 200px;
+}
+.navImg3 {
+background-image: url("/img/3.png");
+background-size: contain;
+height: 200px;
+width: 200px;
+}
+.navImg4 {
+background-image: url("/img/4.png");
+background-size: contain;
+height: 200px;
+width: 200px;
 }
 
-/**Perso**/
-
+.navImg1:active {
+background: url("/img/11.png");
+background-size: contain;
+height: 200px;
+width: 200px;
+}
+.navImg2:active {
+background: url("/img/22.png");
+background-size: contain;
+height: 200px;
+width: 200px;
+}
+.navImg3:active {
+background: url("/img/33.png");
+background-size: contain;
+height: 200px;
+width: 200px;
+}
+.navImg4:active {
+background: url("/img/44.png");
+background-size: contain;
+height: 200px;
+width: 200px;
+}
+/**Personnage**/
 
 
 /** Fin Johanna **/
