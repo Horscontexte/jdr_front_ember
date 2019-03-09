@@ -7,21 +7,16 @@ background-color: #abdad8;
 }
 /**Nav**/
 
-.menuNav {
-display: flex;
-text-align: center;
-}
-
 .flexmoiça {
   display: flex;
-  text-align: center;
-  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .navImg1, .navImg2,
 .navImg3, .navImg4,
-.navImg1:active, .navImg2:active,
-.navImg3:active , .navImg4:active
+.navImg1:hover, .navImg2:hover,
+.navImg3:hover , .navImg4:hover
  {
   background-repeat: no-repeat;
   background-size: contain;
@@ -42,16 +37,16 @@ background-image: url("/img/3.png");
 background-image: url("/img/4.png");
 }
 
-.navImg1:active {
+.navImg1:hover {
 background-image: url("/img/11.png");
 }
-.navImg2:active {
+.navImg2:hover {
 background-image: url("/img/22.png");
 }
-.navImg3:active {
+.navImg3:hover {
 background-image: url("/img/33.png");
 }
-.navImg4:active {
+.navImg4:hover {
 background-image: url("/img/44.png");
 }
 /**Personnage**/
