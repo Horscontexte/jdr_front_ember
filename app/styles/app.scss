@@ -48,7 +48,7 @@ body {
 .navImg4:hover {
   background-image: url("/img/new/4.png");
 }
-// index liste Personnages
+// INDEX liste Personnages
 .listPersonnage {
   background-image: url("/img/44.jpg");
   background-position: left;
@@ -71,6 +71,11 @@ body {
 .btn-retour p {
   color: black;
   text-decoration: none;
+}
+
+md-card {
+  margin: 0;
+  padding: 0;
 }
 
 .card {
