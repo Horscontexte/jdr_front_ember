@@ -1,8 +1,7 @@
 @import 'ember-paper';
-
 /** Johanna **/
 body {
-background-color: #b1b1b1;
+  background-color: #b1b1b1;
 }
 /**Navbar**/
 .textureNav {
@@ -11,10 +10,14 @@ background-color: #b1b1b1;
   background-size: cover;
 }
 
-.navImg1, .navImg2,
-.navImg3, .navImg4,
-.navImg1:hover, .navImg2:hover,
-.navImg3:hover , .navImg4:hover {
+.navImg1,
+.navImg1:hover,
+.navImg2,
+.navImg2:hover,
+.navImg3,
+.navImg3:hover,
+.navImg4,
+.navImg4:hover {
   background-repeat: no-repeat;
   background-size: contain;
   height: 200px;
@@ -22,40 +25,65 @@ background-color: #b1b1b1;
 }
 
 .navImg1 {
-background-image: url("/img/new/11.png");
+  background-image: url("/img/new/11.png");
 }
 .navImg2 {
-background-image: url("/img/new/22.png");
+  background-image: url("/img/new/22.png");
 }
 .navImg3 {
-background-image: url("/img/new/33.png");
+  background-image: url("/img/new/33.png");
 }
 .navImg4 {
-background-image: url("/img/new/44.png");
+  background-image: url("/img/new/44.png");
 }
-
 .navImg1:hover {
-background-image: url("/img/new/1.png");
+  background-image: url("/img/new/1.png");
 }
 .navImg2:hover {
-background-image: url("/img/new/2.png");
+  background-image: url("/img/new/2.png");
 }
 .navImg3:hover {
-background-image: url("/img/new/3.png");
+  background-image: url("/img/new/3.png");
 }
 .navImg4:hover {
-background-image: url("/img/new/4.png");
+  background-image: url("/img/new/4.png");
+}
+// index liste Personnages
+.listPersonnage {
+  background-image: url("/img/44.jpg");
+  background-position: left;
+  background-size: cover;
 }
 
+.listPersonnageCadre {
+  box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.4) inset;
+}
 // SHOW Personnage
-.container {
+.btn-retour {
+  background-color: white;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.4);
+}
+
+.btn-retour:hover {
+  box-shadow: none;
+}
+
+.btn-retour p {
+  color: black;
+  text-decoration: none;
+}
+
+.card {
   padding: 20px;
   background-image: url("/img/42.jpg");
   background-position: auto;
   background-size: cover;
+  height: -webkit-fill-available;
 }
 
-.modelTitle, .modelDescription, .modelAvatar img {
+.modelAvatar img,
+.modelDescription,
+.modelTitle {
   background-color: #ead7c75c;
 }
 
@@ -65,12 +93,12 @@ background-image: url("/img/new/4.png");
   width: 60%;
   text-align: center;
   margin-bottom: 20px;
-  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.4);
 }
 
 .modelDescription {
   padding: 10px;
-  box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2) inset;
 }
 
 .modelDescription p {
@@ -78,16 +106,13 @@ background-image: url("/img/new/4.png");
 }
 
 .modelAvatar img {
-    border-radius: 60px;
-    height: auto;
-    padding: 10px;
-    margin: 20px;
-    box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.4) inset;
+  border-radius: 60px;
+  height: auto;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.3) inset;
 }
-
 /** Fin Johanna **/
-
 .md-default-theme {
-
   padding-top: 0px!important;
 }
