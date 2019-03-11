@@ -2,9 +2,11 @@
   <div class="card">
     {{#card.title as |title|}}
       {{#title.text as |text|}}
-        <div class="modelTitle"> {{#text.headline}}
+        <div class="modelTitle">
+          {{#text.headline}}
             <h3>{{this.model.title}}</h3>
-          {{/text.headline}}</div>
+          {{/text.headline}}
+        </div>
         <div class="modelDescription">
           {{#text.subhead}}
             <p>id : {{this.model.id}}</p>
@@ -21,9 +23,13 @@
       </div>
     {{/card.title}}
     {{#card.actions}}
-      <div class="btn-retour"> {{#paper-button}}{{#link-to "personnage.index"}}
+      {{#link-to "personnage.index"}}
+        <div class="btn-retour">
+          {{#paper-button}}
             <p>Retour</p>
-          {{/link-to}}{{/paper-button}}</div>
+          {{/paper-button}}
+        </div>
+      {{/link-to}}
     {{/card.actions}}
   </div>
 {{/paper-card}}
