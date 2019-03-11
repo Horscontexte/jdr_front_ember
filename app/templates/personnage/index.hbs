@@ -1,16 +1,18 @@
 {{#paper-list}}
 <div class="listPersonnage">
-  {{#paper-subheader}}Agenda / Personnages (pnj){{/paper-subheader}}
+<p class="titreListPerso">{{#paper-subheader}}Agenda / Personnages (pnj){{/paper-subheader}}</p>
   {{#each model as |item|}}
     <div class="listPersonnageCadre">
       {{#paper-item class="md-3-line" onClick=(action "transitionToPersonnage" item)}}
         <img src={{item.imgurl}} alt={{item.title}} class="md-avatar">
+        <div class="linkText">
         {{#link-to "personnage.show" item class=item.id}}
           <div class="md-list-item-text">
             <h3>{{item.title}}</h3>
             <p>{{item.job}}</p>
           </div>
         {{/link-to}}
+      </div>
       {{/paper-item}}
     </div>
   {{/each}}

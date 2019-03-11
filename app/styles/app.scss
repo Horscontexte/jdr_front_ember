@@ -49,6 +49,23 @@ body {
   background-image: url("/img/new/4.png");
 }
 // INDEX liste Personnages
+.linkText a {
+  text-decoration: none;
+  font-family: monospace;
+  font-weight: bolder;
+}
+.titreListPerso {
+  margin: 0;
+}
+.titreListPerso h2 div div {
+  font-family: monospace;
+  font-weight: bolder;
+  color: black;
+}
+.titreListPerso h2:first-child {
+  background-color: #bacad2;
+}
+
 .listPersonnage {
   background-image: url("/img/44.jpg");
   background-position: left;
@@ -81,7 +98,7 @@ md-card {
 .card {
   padding: 20px;
   background-image: url("/img/42.jpg");
-  background-position: auto;
+  background-position: left;
   background-size: cover;
   height: -webkit-fill-available;
 }
