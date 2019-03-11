@@ -65,13 +65,11 @@ body {
 .titreListPerso h2:first-child {
   background-color: #bacad2;
 }
-
 .listPersonnage {
   background-image: url("/img/44.jpg");
   background-position: left;
   background-size: cover;
 }
-
 .listPersonnageCadre {
   box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.4) inset;
 }
@@ -79,6 +77,7 @@ body {
 .btn-retour {
   background-color: white;
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.4);
+  text-align: center;
 }
 
 .btn-retour:hover {
@@ -134,6 +133,21 @@ md-card {
   margin: 20px;
   box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.3) inset;
 }
+// List Model Carte
+.modelCarte {
+  margin: 0;
+}
+.fondCarte md-card {
+  background-image: url("/img/55.jpg");
+  background-size: cover;
+  padding: 15px;
+}
+.fondCarte md-card md-card-title {
+  font-family: monospace;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
 /** Fin Johanna **/
 .md-default-theme {
   padding-top: 0px!important;

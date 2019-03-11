@@ -1,9 +1,35 @@
+<!--
 {{#each model as |lieu|}}
-  <img src={{lieu.imgurl}}/>
-  <li>{{lieu.title}}</li>
-  <li>{{lieu.id}}</li>
-  <li>{{personnage.histoire}}</li>
+  <div class="modelCarte">
+    <img src={{lieu.imgurl}} />
+    <li>{{lieu.title}}</li>
+    <li>{{lieu.id}}</li>
+    <li>{{personnage.histoire}}</li>
+  </div>
 {{/each}}
-
+-->
+<div class="modelCarte layout-row layout-align-center">
+  {{#each model as |lieu|}}
+    <div class="fondCarte">
+      {{#paper-card as |card|}}
+        {{card.image src=lieu.imgurl}}
+        {{#card.title as |title|}}
+          {{#title.text as |text|}}
+            {{#text.headline}}{{lieu.title}}{{/text.headline}}
+          {{/title.text}}
+        {{/card.title}}
+        {{#card.content}}
+          <p>
+            <li>{{lieu.id}}</li>
+            <li>{{personnage.histoire}}</li>
+          </p>
+        {{/card.content}}
+        {{#card.actions class="layout-column"}}
+        <div class="btn-retour">{{#paper-button}}Action 1{{/paper-button}}</div>
+        {{/card.actions}}
+      {{/paper-card}}
+    </div>
+  {{/each}}
+</div>
 
 {{outlet}}
