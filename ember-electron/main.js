@@ -30,8 +30,8 @@ app.on('window-all-closed', () => {
 
 app.on('ready', () => {
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1100,
+    height: 700,
   });
 
   // If you want to open up dev tools programmatically, call
