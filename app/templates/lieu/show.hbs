@@ -1,29 +1,26 @@
 <div class="modelCarte layout-row layout-align-center">
-
-    <div class="fondCarte">
-      {{#paper-card as |card|}}
-        <img class="card-media" src={{this.model.imgurl}} />
-        {{#card.title as |title|}}
-          {{#title.text as |text|}}
-            {{#text.headline}}{{lieu.title}}{{/text.headline}}
-          {{/title.text}}
-        {{/card.title}}
-        {{#card.content}}
-          <h3>{{this.model.title}}</h3>
-          <p>{{this.model.id}}</p>
-          <p>{{this.model.histoire}}</p>
-        {{/card.content}}
-        {{#card.actions}}
-          {{#link-to "lieu.index"}}
-            <div class="btn-retour">
-              {{#paper-button}}
-                <p>Retour</p>
-              {{/paper-button}}
-            </div>
-          {{/link-to}}
-        {{/card.actions}}
-      {{/paper-card}}
-    </div>
-
+  <div class="fondCarte">
+    {{#paper-card as |card|}}
+      <img class="card-media" src={{this.model.imgurl}} alt="img for lieu">
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}{{lieu.title}}{{/text.headline}}
+        {{/title.text}}
+      {{/card.title}}
+      {{#card.content}}
+        <h3>{{this.model.title}}</h3>
+        <p>{{this.model.id}}</p>
+        <p>{{this.model.histoire}}</p>
+      {{/card.content}}
+      {{#card.actions}}
+        {{#link-to "lieu.index"}}
+          <div class="btn-retour">
+            {{#paper-button}}
+              <p>Retour</p>
+            {{/paper-button}}
+          </div>
+        {{/link-to}}
+      {{/card.actions}}
+    {{/paper-card}}
+  </div>
 </div>
-<!--{{outlet}}-->
