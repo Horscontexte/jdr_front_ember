@@ -54,24 +54,24 @@ body {
   font-family: monospace;
   font-weight: bolder;
 }
-.titreListPerso {
+.titreList {
   margin: 0;
 }
-.titreListPerso h2 div div {
+.titreList h2 div div {
   font-family: monospace;
   font-weight: bolder;
   font-size: 1.2em;
   color: black;
 }
-.titreListPerso h2:first-child {
+.titreList h2:first-child {
   background-color: #b3b3b3d9;
 }
-.listPersonnage {
+.list {
   background-image: url("/img/44.jpg");
   background-position: left;
   background-size: cover;
 }
-.listPersonnageCadre {
+.listCadre {
   box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.4) inset;
 }
 // SHOW Personnage

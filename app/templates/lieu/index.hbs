@@ -1,35 +1,19 @@
-<!--
-{{#each model as |lieu|}}
-  <div class="modelCarte">
-    <img src={{lieu.imgurl}} />
-    <li>{{lieu.title}}</li>
-    <li>{{lieu.id}}</li>
-    <li>{{personnage.histoire}}</li>
+{{#paper-list}}
+  <div class="list">
+    <p class="titreList">{{#paper-subheader}}Carte / Lieux{{/paper-subheader}}</p>
+    {{#each model as |item|}}
+      <div class="listCadre">
+        {{#paper-item class="md-3-line"}}
+          <img src={{item.imgurl}} alt={{item.title}} class="md-avatar">
+          <div class="linkText">
+            {{#link-to "lieu.show" item class=item.id}}
+              <div class="md-list-item-text">
+                <h3>{{item.title}}</h3>
+              </div>
+            {{/link-to}}
+          </div>
+        {{/paper-item}}
+      </div>
+    {{/each}}
   </div>
-{{/each}}
--->
-<div class="modelCarte layout-row layout-align-center">
-  {{#each model as |lieu|}}
-    <div class="fondCarte">
-      {{#paper-card as |card|}}
-        {{card.image src=lieu.imgurl}}
-        {{#card.title as |title|}}
-          {{#title.text as |text|}}
-            {{#text.headline}}{{lieu.title}}{{/text.headline}}
-          {{/title.text}}
-        {{/card.title}}
-        {{#card.content}}
-          <p>
-            <li>{{lieu.id}}</li>
-            <li>{{personnage.histoire}}</li>
-          </p>
-        {{/card.content}}
-        {{#card.actions class="layout-column"}}
-        <div class="btn-retour">{{#paper-button}}Action 1{{/paper-button}}</div>
-        {{/card.actions}}
-      {{/paper-card}}
-    </div>
-  {{/each}}
-</div>
-
-{{outlet}}
+{{/paper-list}}
