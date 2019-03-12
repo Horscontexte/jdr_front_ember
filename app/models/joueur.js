@@ -12,7 +12,7 @@ export default DS.Model.extend({
   ecole: DS.attr('string'),
   diplome: DS.attr('string'),
   sm: DS.attr('number'),
-  comp: DS.attr('array'),
+  comp: DS.attr(),
   arme: DS.attr('string'),
   publish: DS.attr('boolean'),
 });
