@@ -19,6 +19,7 @@ Router.map(function() {
   this.route('personnage', function() {
     this.route('show', {path: '/:personnage_id'});
   });
+  this.route('help', {path: '/'});
 });
 
 export default Router;
