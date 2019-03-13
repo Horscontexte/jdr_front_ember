@@ -1,11 +1,9 @@
-<div class="modelCarte layout-column layout-align-center">
-  <div class="fondDocument layout-center">
+<div class="modelCarte layout-rox layout-align-center">
+  <div class="fondDocument flex layout-center">
     {{#paper-card as |card|}}
       <div class="img-document"><img class="card-media" src={{this.model.imgurl}} alt="img for document"></div>
       {{#card.title as |title|}}
-        {{#title.text as |text|}}
           {{#text.headline}}{{document.title}}{{/text.headline}}
-        {{/title.text}}
       {{/card.title}}
       <div class="bg-white">
         {{#card.content}}
@@ -13,17 +11,17 @@
           <p>id : {{this.model.id}}</p>
           <p>{{this.model.found}}</p>
           <p>{{this.model.description}}</p>
+          {{#card.actions}}
+            {{#link-to "document.index"}}
+              <div class="btn-retour">
+                {{#paper-button}}
+                  <p>Retour</p>
+                {{/paper-button}}
+              </div>
+            {{/link-to}}
+          {{/card.actions}}
         {{/card.content}}
       </div>
-      {{#card.actions}}
-        {{#link-to "document.index"}}
-          <div class="btn-retour">
-            {{#paper-button}}
-              <p>Retour</p>
-            {{/paper-button}}
-          </div>
-        {{/link-to}}
-      {{/card.actions}}
     {{/paper-card}}
   </div>
 </div>

@@ -2,18 +2,17 @@
   <div class="card">
     {{#card.title as |title|}}
       {{#title.text as |text|}}
-        <div class="modelTitle">
+        <div class="modelTitleTeam">
           {{#text.headline}}
             <h3>{{this.model.name}}</h3>
           {{/text.headline}}
         </div>
-        <div class="modelDescription">
+        <div class="modelDescription bg-white">
           {{#text.subhead}}
             <p>id : {{this.model.id}}</p>
             <p>Age : {{this.model.age}}</p>
             <p>Métier : {{this.model.job}}</p>
             <p>{{this.model.description}}</p>
-
           {{/text.subhead}}
         </div>
       {{/title.text}}

@@ -10,7 +10,6 @@ body {
   background-repeat: no-repeat;
   height: 720px;
 }
-
 /**Navbar**/
 .textureNav {
   background-image: url("/img/4224.jpg");
@@ -39,54 +38,68 @@ body {
 .navImg1 {
   background-image: url("/img/new/11.png");
 }
+
 .navImg2 {
   background-image: url("/img/new/22.png");
 }
+
 .navImg3 {
   background-image: url("/img/new/33.png");
 }
+
 .navImg4 {
   background-image: url("/img/new/44.png");
 }
+
 .navImg1:hover {
   background-image: url("/img/new/1.png");
 }
+
 .navImg2:hover {
   background-image: url("/img/new/2.png");
 }
+
 .navImg3:hover {
   background-image: url("/img/new/3.png");
 }
+
 .navImg4:hover {
   background-image: url("/img/new/4.png");
 }
 // INDEX liste Personnages
+
 .linkText a {
   text-decoration: none;
   font-family: monospace;
   font-weight: bolder;
 }
+
 .titreList {
   margin: 0;
 }
+
 .titreList h2 div div {
   font-family: monospace;
   font-weight: bolder;
   font-size: 1.2em;
   color: black;
 }
+
 .titreList h2:first-child {
   background-color: #b3b3b3d9;
 }
+
 .list {
   background-image: url("/img/44.jpg");
   background-position: left;
   background-size: cover;
 }
+
 .listCadre {
   box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.4) inset;
 }
 // SHOW Personnage
+
 .btn-retour {
   background-color: white;
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.4);
@@ -152,6 +165,7 @@ md-card {
   box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.3) inset;
 }
 // List Model Carte
+
 .modelCarte {
   margin: 0;
 }
@@ -162,6 +176,7 @@ md-card {
   padding: 15px;
   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.5) inset;
 }
+
 .fondCarte md-card md-card-title {
   font-family: monospace;
   font-weight: bolder;
@@ -172,17 +187,32 @@ md-card {
   background-color: #ffffffb0;
   box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.3);
 }
-
 // Show Document
 .img-document {
   text-align: center;
 }
 
+.modelTitleTeam {
+  background-color: white;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.4);
+}
+
 .fondDocument md-card {
   background-image: url("/img/401.jpg");
+  height: auto;
+  padding: 10px;
   background-size: cover;
-  padding: 15px;
   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.5) inset;
+}
+
+.flex md-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /** Fin Johanna **/
