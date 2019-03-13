@@ -7,11 +7,13 @@
           {{#text.headline}}{{lieu.title}}{{/text.headline}}
         {{/title.text}}
       {{/card.title}}
-      {{#card.content}}
-        <h3>{{this.model.title}}</h3>
-        <p>{{this.model.id}}</p>
-        <p>{{this.model.histoire}}</p>
-      {{/card.content}}
+       <div class="bg-white">
+         {{#card.content}}
+          <h3>{{this.model.title}}</h3>
+          <p>id : {{this.model.id}}</p>
+          <p>{{this.model.histoire}}</p>
+         {{/card.content}}
+       </div>
       {{#card.actions}}
         {{#link-to "lieu.index"}}
           <div class="btn-retour">
