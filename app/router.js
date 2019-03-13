@@ -14,7 +14,7 @@ Router.map(function() {
     this.route('show', {path: '/:document_id'});
   });
   this.route('joueur', function() {
-    this.route('show', {path: '/joueur_id'});
+    this.route('show', {path: '/:joueur_id'});
   });
   this.route('personnage', function() {
     this.route('show', {path: '/:personnage_id'});

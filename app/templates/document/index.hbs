@@ -3,7 +3,7 @@
     <p class="titreList">{{#paper-subheader}}Document{{/paper-subheader}}</p>
     {{#each model as |item|}}
       <div class="listCadre">
-        {{#paper-item class="md-3-line"}}
+        {{#paper-item class="md-3-line" onClick=(action "transitionToDocument" item)}}
           <img src={{item.imgurl}} alt={{item.title}} class="md-avatar">
           <div class="linkText">
             {{#link-to "document.show" item class=item.id}}
