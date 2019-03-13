@@ -2,9 +2,6 @@
   <div class="fondDocument flex layout-center">
     {{#paper-card as |card|}}
       <div class="img-document"><img class="card-media" src={{this.model.imgurl}} alt="img for document"></div>
-      {{#card.title as |title|}}
-          {{#text.headline}}{{document.title}}{{/text.headline}}
-      {{/card.title}}
       <div class="bg-white">
         {{#card.content}}
           <h3>{{this.model.title}}</h3>
@@ -25,3 +22,19 @@
     {{/paper-card}}
   </div>
 </div>
+ <!---
+{{#if showAnimatedDialog}}
+  {{#paper-dialog fullscreen=fullscreen onClose=(action "closeAnimatedDialog") openFrom="#paper-dialog-demo" closeTo="#bottom-of-card"}}
+
+    {{#paper-dialog-content}}
+      <h2 class="md-title">This dialog is animated!</h2>
+    <img class="card-media" src={{this.model.imgurl}} alt="img for document">
+    {{/paper-dialog-content}}
+
+    {{#paper-dialog-actions class="layout-row"}}
+      <span class="flex"></span>
+      {{#paper-button primary=true onClick=(action "closeAnimatedDialog")}}Okay!{{/paper-button}}
+    {{/paper-dialog-actions}}
+
+  {{/paper-dialog}}
+{{/if}} -->
