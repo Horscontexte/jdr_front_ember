@@ -18,12 +18,12 @@
       {{/title.text}}
       <div class="modelAvatar">
         {{#title.media size="md"}}
-          <img class="card-media" src={{this.model.imgurl}} alt="img for personnage">
+          <img class="card-media" src={{this.model.imgurl}} alt="img for joueur">
         {{/title.media}}
       </div>
     {{/card.title}}
     {{#card.actions}}
-      {{#link-to "personnage.index"}}
+      {{#link-to "joueur.index"}}
         <div class="btn-retour">
           {{#paper-button}}
             <p>Retour</p>
