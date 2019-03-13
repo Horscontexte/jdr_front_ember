@@ -18,6 +18,16 @@ You will need the following things properly installed on your computer.
 * `cd jdr-ember`
 * `npm install`
 
+## Issue
+
+If after `npm install` you get error like :
+
+`fs.js:1384 throw error; Error: watch /node_modules/angular-material-styles/src/components/tooltip ENOSPC`
+
+to fix it you will need to run :
+
+`echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p`
+
 ## Running / Development
 
 * `ember serve`
@@ -55,3 +65,5 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+  
+  
