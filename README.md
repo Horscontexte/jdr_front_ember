@@ -20,12 +20,9 @@ You will need the following things properly installed on your computer.
 
 ## Issue
 
-If after `npm install` you get error like : 
-`fs.js:1384
-    throw error;
-    ^
+If after `npm install` you get error like :
 
-Error: watch /home/camille/Projet/jdr_front_ember/node_modules/angular-material-styles/src/components/tooltip ENOSPC`
+`fs.js:1384 throw error; Error: watch /home/camille/Projet/jdr_front_ember/node_modules/angular-material-styles/src/components/tooltip ENOSPC`
 
 to fix it you will need to run :
 
