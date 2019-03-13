@@ -1,1 +1,29 @@
-{{outlet}}
+<div class="modelCarte layout-row layout-align-center">
+  <div class="fondCarte">
+    {{#paper-card as |card|}}
+      <img class="card-media" src={{this.model.imgurl}} alt="img for document">
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+          {{#text.headline}}{{document.title}}{{/text.headline}}
+        {{/title.text}}
+      {{/card.title}}
+       <div class="bg-white">
+         {{#card.content}}
+          <h3>{{this.model.title}}</h3>
+          <p>id : {{this.model.id}}</p>
+          <p>{{this.model.found}}</p>
+          <p>{{this.model.description}}</p>
+         {{/card.content}}
+       </div>
+      {{#card.actions}}
+        {{#link-to "document.index"}}
+          <div class="btn-retour">
+            {{#paper-button}}
+              <p>Retour</p>
+            {{/paper-button}}
+          </div>
+        {{/link-to}}
+      {{/card.actions}}
+    {{/paper-card}}
+  </div>
+</div>
