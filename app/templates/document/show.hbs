@@ -2,7 +2,7 @@
   <div class="fondDocument flex layout-center">
     {{#paper-card as |card|}}
       <div class="img-document"><img class="card-media" src={{this.model.imgurl}} alt="img for document"></div>
-      <div class="bg-white">
+      <div class="bg-grey info-document">
         {{#card.content}}
           <h3>{{this.model.title}}</h3>
           <p>id : {{this.model.id}}</p>
@@ -22,7 +22,7 @@
     {{/paper-card}}
   </div>
 </div>
- <!---
+<!---
 {{#if showAnimatedDialog}}
   {{#paper-dialog fullscreen=fullscreen onClose=(action "closeAnimatedDialog") openFrom="#paper-dialog-demo" closeTo="#bottom-of-card"}}
 
