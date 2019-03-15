@@ -1,3 +1,4 @@
+<!--
 {{#paper-list}}
   <div class="list">
     <p class="titreList">{{#paper-subheader}}Team / Joueur{{/paper-subheader}}</p>
@@ -18,4 +19,26 @@
       </div>
     {{/each}}
   </div>
-{{/paper-list}}
+{{/paper-list}} -->
+
+<div class="layout-row layout-xs-column">
+  <div class="flex">
+    <p class="titreList">{{#paper-subheader}}Team / Joueur{{/paper-subheader}}</p>
+    {{#each model as |item|}}
+    <div class="listCadre bg-white">
+      {{#paper-item class="md-3-line" onClick=(action "transitionToJoueur" item)}}
+        <img src={{item.imgurl}} alt={{item.name}} class="md-avatar">
+        <div class="linkText">
+          {{#link-to "joueur.show" item class=item.id}}
+            <div class="md-list-item-text padding color-b">
+              <h3>{{item.name}}</h3>
+              <p>PV : {{item.pv}}{{paper-slider value=item.pv min="0" max="9999" disabled=true  onChange=(action (mut item.pv))}}</p>
+              <p>PM : {{item.pm}}{{paper-slider value=item.pm min="0" max="9999" disabled=isSliderDisabled onChange=(action (mut item.pm))}}</p>
+            </div>
+          {{/link-to}}
+        </div>
+      {{/paper-item}}
+    </div>
+    {{/each}}
+  </div>
+</div>

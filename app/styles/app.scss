@@ -4,6 +4,19 @@ body {
   background-color: #b1b1b1;
 }
 
+md-list-item .md-avatar, md-list-item .md-list-item-inner .md-avatar {
+  width: 70px;
+  height: 70px;
+}
+
+.padding {
+  padding: 15px;
+}
+
+.color-b {
+  color: black;
+}
+
 .imgHelp {
   background-image: url("/img/13.jpg");
   background-size: cover;
@@ -129,7 +142,6 @@ md-card {
   background-image: url("/img/42.jpg");
   background-position: left;
   background-size: cover;
-  height: -webkit-fill-available;
   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.5) inset;
 }
 
@@ -155,6 +167,7 @@ md-card {
 
 .modelDescription p {
   color: black;
+  padding: 5px;
 }
 
 .modelAvatar img {
@@ -191,7 +204,6 @@ md-card {
 .bg-grey {
   background-color: #d6d6d6;
 }
-
 
 // Show Document
 .img-document {
