@@ -9,11 +9,16 @@
       {{/card.title}}
       <div class="bg-white">
         {{#card.content}}
-          <h3>{{this.model.title}}</h3>
+          <div class="modelTitle">
+              <h3>{{this.model.title}}</h3>    
+          </div>
           <p>id : {{this.model.id}}</p>
-          <p>{{this.model.histoire}}</p>
-          <p>Climat : {{this.model.climat}}</p>
-          <p>{{this.model.howto}}</p>
+          <p>Histoire :</p>
+          <p class="modelDescription">{{this.model.histoire}}</p>
+          <p>Climat :</p>
+          <p class="modelDescription">{{this.model.climat}}</p>
+          <p>Emplacement :</p>
+          <p class="modelDescription">{{this.model.howto}}</p>
           <p>{{this.model.hotstop}}</p>
         {{/card.content}}
       </div>
