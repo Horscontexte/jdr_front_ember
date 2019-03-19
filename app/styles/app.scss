@@ -234,7 +234,7 @@ md-card {
 
 // Show Document
 .img-document {
-  text-align: center;
+    text-align: center;
 }
 
 .modelTitleTeam {
@@ -245,10 +245,9 @@ md-card {
 }
 
 .fondDocument md-card {
-  background-color: #e0e0e0;
-  height: auto;
+  display: -webkit-inline-box;
+  height: -webkit-fill-available; //a enlever si besoin
   padding: 10px;
-  background-size: cover;
   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.5) inset;
 }
 
