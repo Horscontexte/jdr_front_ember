@@ -1,13 +1,15 @@
 <div class="modelCarte layout-rox layout-align-center">
   <div class="fondDocument flex layout-center">
-    {{#paper-card as |card|}}
+    {{#paper-card class="card" as |card|}}
       <div class="img-document"><img class="card-media" src={{this.model.imgurl}} alt="img for document"></div>
-      <div class="bg-grey info-document">
+      <div class="bg-white margin">
         {{#card.content}}
-          <h3>{{this.model.title}}</h3>
-          <p>id : {{this.model.id}}</p>
-          <p>{{this.model.found}}</p>
-          <p>{{this.model.description}}</p>
+          <h3 class="modelTitle">{{this.model.title}}</h3>
+          <div class="modelDescription">
+            <p><span class="spanDeco">id</span> : {{this.model.id}}</p>
+            <p><span class="spanDeco">Source</span> : {{this.model.found}}</p>
+            <p>"{{this.model.description}}"</p>
+          </div>
           {{#card.actions}}
             {{#link-to "document.index"}}
               <div class="btn-retour">

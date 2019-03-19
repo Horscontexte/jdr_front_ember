@@ -21,6 +21,10 @@ p {
   font-size: 1.2em;
 }
 
+.spanDeco {
+  text-decoration: underline;
+}
+
 body {
   background-color: #b1b1b1;
 }
@@ -32,6 +36,10 @@ md-list-item .md-avatar, md-list-item .md-list-item-inner .md-avatar {
 
 .padding {
   padding: 15px;
+}
+
+.margin {
+  margin: 10px;
 }
 
 .color-b {
@@ -161,7 +169,7 @@ md-card {
 
 .card {
   padding: 20px;
-  background-image: url("/img/42.jpg");
+  background-image: url("/img/400.jpg");
   background-position: left;
   background-size: cover;
   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.5) inset;
@@ -204,7 +212,7 @@ md-card {
 }
 
 .fondCarte md-card {
-  background-image: url("/img/55.jpg");
+  background-image: url("/img/400.jpg");
   background-size: cover;
   padding: 15px;
   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.5) inset;
@@ -217,7 +225,7 @@ md-card {
 }
 
 .bg-white {
-  background-color: #ffffffb0;
+  background-color: #ffffffe0;
 }
 
 .bg-grey {
@@ -230,7 +238,6 @@ md-card {
 }
 
 .modelTitleTeam {
-  background-color: white;
   width: 60%;
   text-align: center;
   margin-bottom: 20px;
@@ -238,7 +245,7 @@ md-card {
 }
 
 .fondDocument md-card {
-//  background-image: url("/img/401.jpg");
+  background-color: #e0e0e0;
   height: auto;
   padding: 10px;
   background-size: cover;
