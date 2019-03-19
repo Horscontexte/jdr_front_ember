@@ -1,5 +1,26 @@
 @import 'ember-paper';
 /** Johanna **/
+
+@font-face {
+  font-family: Titre;
+  src: url(/font/p.otf);
+}
+@font-face {
+  font-family: p;
+  src: url(/font/o.TTF);
+}
+
+h3 {
+  font-family: Titre;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+}
+
+p {
+  font-family: p;
+  font-size: 1.2em;
+}
+
 body {
   background-color: #b1b1b1;
 }
@@ -92,9 +113,10 @@ md-list-item .md-avatar, md-list-item .md-list-item-inner .md-avatar {
 }
 
 .titreList h2 div div {
-  font-family: monospace;
+  font-family: titre;
   font-weight: bolder;
-  font-size: 1.2em;
+  letter-spacing: 2px;
+  font-size: 1.3em;
   color: black;
 }
 
@@ -196,7 +218,6 @@ md-card {
 
 .bg-white {
   background-color: #ffffffb0;
-  box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.3);
 }
 
 .bg-grey {
