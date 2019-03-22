@@ -1,13 +1,12 @@
 @import 'ember-paper';
 /** Johanna **/
-
 @font-face {
   font-family: Titre;
-  src: url(/font/p.otf);
+  src: url("/font/p.otf");
 }
 @font-face {
   font-family: p;
-  src: url(/font/o.TTF);
+  src: url("/font/o.TTF");
 }
 
 h3 {
@@ -25,11 +24,16 @@ p {
   text-decoration: underline;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 body {
   background-color: #b1b1b1;
 }
 
-md-list-item .md-avatar, md-list-item .md-list-item-inner .md-avatar {
+md-list-item .md-avatar,
+md-list-item .md-list-item-inner .md-avatar {
   width: 70px;
   height: 70px;
 }
@@ -231,10 +235,9 @@ md-card {
 .bg-grey {
   background-color: #d6d6d6;
 }
-
 // Show Document
 .img-document {
-    text-align: center;
+  text-align: center;
 }
 
 .modelCarte md-card {
@@ -248,32 +251,43 @@ md-card {
   flex-direction: row;
   justify-content: center;
 }
-
-// Joueur
-
+// JOUEUR
 // progress bar
+md-slider {
+  width: 100%;
+}
+
 md-slider .md-track-container {
   height: 10px;
   top: 20px;
 }
 
-.md-track-ticks, .md-track {
+.md-track,
+.md-track-ticks {
   background-color: #a6bb8e !important;
   display: block;
   border-radius: 20px;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.6) inset;
+}
+
+md-input-container {
+  margin: 0 !important;
+  width: 20%;
 }
 // button progress bar
+
 div.md-disabled-thumb {
   top: 4px;
   left: -20px;
   border-color: #a6bb8e;
   height: 40px;
   width: 40px;
-  }
-  md-slider .md-thumb:after {
-    border-color: #a6bb8e;
-    background-color: #60ff6c;
-  }
+}
+
+md-slider .md-thumb:after {
+  border-color: #6f7d5f;
+  background-color: #94ff9c;
+}
 
 .modelTitleTeam {
   width: 60%;
@@ -281,7 +295,6 @@ div.md-disabled-thumb {
   margin-bottom: 20px;
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.4);
 }
-
 /** Fin Johanna **/
 .md-default-theme {
   padding-top: 0px!important;

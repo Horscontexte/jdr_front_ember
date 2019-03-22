@@ -15,9 +15,15 @@
             <p>Diplome : {{this.model.diplome}}</p>
             <p>Pays : {{this.model.from}}</p>
             <p>{{this.model.description}}</p>
-            <p>PV : {{this.model.pv}}{{paper-slider value=this.model.pv min="0" max="12000" disabled=true  onChange=(action (mut this.model.pv))}}</p>
-            <p>PM : {{this.model.pm}}{{paper-slider value=this.model.pm min="0" max="12000" disabled=true  onChange=(action (mut this.model.pm))}}</p>
-            <p>SM : {{this.model.sm}}{{paper-slider value=this.model.sm min="0" max="12000" disabled=false  onChange=(action (mut this.model.sm))}}</p>
+            <p><span class="bold">Point de Vie :</span>
+              <div class="layout-row">{{paper-slider value=this.model.pv min="0" max="12000" disabled=true  onChange=(action (mut this.model.pv))}}{{paper-input type="number" value=this.model.pv onChange=(action (mut this.model.pv))}}</div>
+            </p>
+            <p><span class="bold">PM :</span>
+              <div class="layout-row">{{paper-slider value=this.model.pm min="0" max="12000" disabled=true  onChange=(action (mut this.model.pm))}}{{paper-input type="number" value=this.model.pm onChange=(action (mut this.model.pm))}}</div>
+            </p>
+            <p><span class="bold">Santé Mentale :</span>
+              <div class="layout-row">{{paper-slider value=this.model.sm min="0" max="12000" disabled=false  onChange=(action (mut this.model.sm))}}{{paper-input type="number" value=this.model.sm onChange=(action (mut this.model.sm))}}</div>
+            </p>
           {{/text.subhead}}
         </div>
       {{/title.text}}
