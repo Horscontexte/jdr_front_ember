@@ -17,7 +17,7 @@
             <p>{{this.model.from}}</p>
             <p>PV : {{this.model.pv}}{{paper-slider value=this.model.pv min="0" max="9999" disabled=true  onChange=(action (mut this.model.pv))}}</p>
             <p>PM : {{this.model.pm}}{{paper-slider value=this.model.pm min="0" max="9999" disabled=isSliderDisabled onChange=(action (mut this.model.pm))}}</p>
-            <p>SM : {{this.model.sm}}<progress max="1000" value=this.model.pm></progress></p>
+            <p>SM : {{this.model.sm}}<progress max="100" value=this.model.sm><div class="progress-bar"><span style="width: 80%;">Progress: 80%</span></div></progress></p>
           {{/text.subhead}}
         </div>
       {{/title.text}}
