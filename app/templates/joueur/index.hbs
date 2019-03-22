@@ -25,7 +25,7 @@
   <div class="flex">
     <p class="titreList">{{#paper-subheader}}Team / Joueur{{/paper-subheader}}</p>
     {{#each model as |item|}}
-      <div class="listCadre bg-white">
+      <div class="listCadre bg-white layout-row layout-xs-column">
         {{#paper-item class="md-3-line" onClick=(action "transitionToJoueur" item)}}
           <img src={{item.imgurl}} alt={{item.name}} class="md-avatar">
           <div class="linkText">
