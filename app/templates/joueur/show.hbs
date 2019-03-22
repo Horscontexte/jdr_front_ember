@@ -18,11 +18,44 @@
             <p><span class="bold">Point de Vie :</span>
               <div class="layout-row">{{paper-slider value=this.model.pv min="0" max="12000" disabled=true  onChange=(action (mut this.model.pv))}}{{paper-input type="number" value=this.model.pv onChange=(action (mut this.model.pv))}}</div>
             </p>
-            <p><span class="bold">PM :</span>
+            <p><span class="bold">Point de Mana :</span>
               <div class="layout-row">{{paper-slider value=this.model.pm min="0" max="12000" disabled=true  onChange=(action (mut this.model.pm))}}{{paper-input type="number" value=this.model.pm onChange=(action (mut this.model.pm))}}</div>
             </p>
             <p><span class="bold">Santé Mentale :</span>
               <div class="layout-row">{{paper-slider value=this.model.sm min="0" max="12000" disabled=false  onChange=(action (mut this.model.sm))}}{{paper-input type="number" value=this.model.sm onChange=(action (mut this.model.sm))}}</div>
+            </p>
+            <p><span class="bold">Force :</span>
+              <div class="layout-row">{{paper-slider value=this.model.stats.for min="0" max="12000" disabled=false  onChange=(action (mut this.model.stats.for))}}{{paper-input type="number" value=this.model.stats.for onChange=(action (mut this.model.stats.for))}}</div>
+            </p>
+            <p><span class="bold">Dextérité :</span>
+              <div class="layout-row">{{paper-slider value=this.model.stats.dex min="0" max="12000" disabled=false  onChange=(action (mut this.model.stats.dex))}}{{paper-input type="number" value=this.model.stats.dex onChange=(action (mut this.model.stats.dex))}}</div>
+            </p>
+            <p><span class="bold">Intélligence :</span>
+              <div class="layout-row">{{paper-slider value=this.model.stats.int min="0" max="12000" disabled=true  onChange=(action (mut this.model.stats.int))}}{{paper-input type="number" value=this.model.stats.int onChange=(action (mut this.model.stats.int))}}</div>
+            </p>
+            <p><span class="bold">Consistence :</span>
+              <div class="layout-row">{{paper-slider value=this.model.stats.con min="0" max="12000" disabled=true  onChange=(action (mut this.model.stats.con))}}{{paper-input type="number" value=this.model.stats.con onChange=(action (mut this.model.stats.con))}}</div>
+            </p>
+            <p><span class="bold">Apparence :</span>
+              <div class="layout-row">{{paper-slider value=this.model.stats.app min="0" max="12000" disabled=true  onChange=(action (mut this.model.stats.app))}}{{paper-input type="number" value=this.model.stats.app onChange=(action (mut this.model.stats.app))}}</div>
+            </p>
+            <p><span class="bold">Pouvoir :</span>
+              <div class="layout-row">{{paper-slider value=this.model.stats.pou min="0" max="12000" disabled=true  onChange=(action (mut this.model.stats.pou))}}{{paper-input type="number" value=this.model.stats.pou onChange=(action (mut this.model.stats.pou))}}</div>
+            </p>
+            <p><span class="bold">Taille :</span>
+              <div class="layout-row">{{paper-slider value=this.model.stats.tai min="0" max="12000" disabled=true  onChange=(action (mut this.model.stats.tai))}}{{paper-input type="number" value=this.model.stats.tai onChange=(action (mut this.model.stats.tai))}}</div>
+            </p>
+            <p><span class="bold">Santé :</span>
+              <div class="layout-row">{{paper-slider value=this.model.stats.san min="0" max="12000" disabled=true  onChange=(action (mut this.model.stats.san))}}{{paper-input type="number" value=this.model.stats.san onChange=(action (mut this.model.stats.san))}}</div>
+            </p>
+            <p><span class="bold">Education :</span>
+              <div class="layout-row">{{paper-slider value=this.model.stats.edu min="0" max="12000" disabled=true  onChange=(action (mut this.model.stats.edu))}}{{paper-input type="number" value=this.model.stats.edu onChange=(action (mut this.model.stats.edu))}}</div>
+            </p>
+            <p><span class="bold">Idée :</span>
+              <div class="layout-row">{{paper-slider value=this.model.stats.idee min="0" max="12000" disabled=true  onChange=(action (mut this.model.stats.idee))}}{{paper-input type="number" value=this.model.stats.idee onChange=(action (mut this.model.stats.idee))}}</div>
+            </p>
+            <p><span class="bold">Connaisance :</span>
+              <div class="layout-row">{{paper-slider value=this.model.stats.conn min="0" max="12000" disabled=true  onChange=(action (mut this.model.stats.conn))}}{{paper-input type="number" value=this.model.stats.conn onChange=(action (mut this.model.stats.conn))}}</div>
             </p>
           {{/text.subhead}}
         </div>
