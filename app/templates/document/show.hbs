@@ -3,11 +3,10 @@
     <div class="img-document">
       <img class="card-media" src={{this.model.imgurl}} alt="img for document">
     </div>
-    <div class="bg-white margin">
+    <div class="margin">
       {{#card.content}}
         <h3 class="modelTitle">{{this.model.title}}</h3>
         <div class="modelDescription">
-          <p><span class="spanDeco">id</span> : {{this.model.id}}</p>
           <p><span class="spanDeco">Source</span> : {{this.model.found}}</p>
           <p>"{{this.model.description}}"</p>
         </div>

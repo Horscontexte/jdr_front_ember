@@ -9,7 +9,6 @@
         </div>
         <div class="modelDescription bg-white">
           {{#text.subhead}}
-            <p>id : {{this.model.id}}</p>
             <p>Age : {{this.model.age}}</p>
             <p>Métier : {{this.model.job}}</p>
             <p>Ecole : {{this.model.ecole}}</p>
@@ -18,7 +17,7 @@
             <p>{{this.model.from}}</p>
             <p>PV : {{this.model.pv}}{{paper-slider value=this.model.pv min="0" max="9999" disabled=true  onChange=(action (mut this.model.pv))}}</p>
             <p>PM : {{this.model.pm}}{{paper-slider value=this.model.pm min="0" max="9999" disabled=isSliderDisabled onChange=(action (mut this.model.pm))}}</p>
-            <p>SM : {{this.model.sm}}{{paper-slider value=this.model.sm min="0" max="9999" disabled=isSliderDisabled onChange=(action (mut this.model.sm))}}</p>
+            <p>SM : {{this.model.sm}}<progress max="1000" value=this.model.pm></progress></p>
           {{/text.subhead}}
         </div>
       {{/title.text}}
