@@ -251,17 +251,29 @@ md-card {
 
 // Joueur
 
-progress[value] {
-  /* Reset the default appearance */
-  -webkit-appearance: none;
-  width: 250px;
-  height: 20px;
+// progress bar
+md-slider .md-track-container {
+  height: 10px;
+  top: 20px;
 }
-progress[value]::-webkit-progress-bar {
-  background-color: #eee;
-  border-radius: 2px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+
+.md-track-ticks, .md-track {
+  background-color: #a6bb8e !important;
+  display: block;
+  border-radius: 20px;
 }
+// button progress bar
+div.md-disabled-thumb {
+  top: 4px;
+  left: -20px;
+  border-color: #a6bb8e;
+  height: 40px;
+  width: 40px;
+  }
+  md-slider .md-thumb:after {
+    border-color: #a6bb8e;
+    background-color: #60ff6c;
+  }
 
 .modelTitleTeam {
   width: 60%;
