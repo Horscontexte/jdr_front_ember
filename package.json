@@ -24,6 +24,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "bootstrap": "^4.3.1",
+    "mongoose":"^5.4.19",
     "broccoli-asset-rev": "^2.7.0",
     "devtron": "^1.4.0",
     "electron-forge": "^5.2.4",
