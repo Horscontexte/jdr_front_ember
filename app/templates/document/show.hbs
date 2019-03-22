@@ -1,29 +1,30 @@
 <div class="modelCarte layout-row layout-align-center">
-  <div class="fondDocument">
-    {{#paper-card class="card" as |card|}}
-      <div class="img-document"><img class="card-media" src={{this.model.imgurl}} alt="img for document"></div>
-      <div class="bg-white margin">
-        {{#card.content}}
-          <h3 class="modelTitle">{{this.model.title}}</h3>
-          <div class="modelDescription">
-            <p><span class="spanDeco">id</span> : {{this.model.id}}</p>
-            <p><span class="spanDeco">Source</span> : {{this.model.found}}</p>
-            <p>"{{this.model.description}}"</p>
-          </div>
-          {{#card.actions}}
-            {{#link-to "document.index"}}
-              <div class="btn-retour">
-                {{#paper-button}}
-                  <p>Retour</p>
-                {{/paper-button}}
-              </div>
-            {{/link-to}}
-          {{/card.actions}}
-        {{/card.content}}
-      </div>
-    {{/paper-card}}
-  </div>
+  {{#paper-card class="card layout-row" as |card|}}
+    <div class="img-document">
+      <img class="card-media" src={{this.model.imgurl}} alt="img for document">
+    </div>
+    <div class="bg-white margin">
+      {{#card.content}}
+        <h3 class="modelTitle">{{this.model.title}}</h3>
+        <div class="modelDescription">
+          <p><span class="spanDeco">id</span> : {{this.model.id}}</p>
+          <p><span class="spanDeco">Source</span> : {{this.model.found}}</p>
+          <p>"{{this.model.description}}"</p>
+        </div>
+        {{#card.actions}}
+          {{#link-to "document.index"}}
+            <div class="btn-retour">
+              {{#paper-button}}
+                <p>Retour</p>
+              {{/paper-button}}
+            </div>
+          {{/link-to}}
+        {{/card.actions}}
+      {{/card.content}}
+    </div>
+  {{/paper-card}}
 </div>
+
 <!---
 {{#if showAnimatedDialog}}
   {{#paper-dialog fullscreen=fullscreen onClose=(action "closeAnimatedDialog") openFrom="#paper-dialog-demo" closeTo="#bottom-of-card"}}

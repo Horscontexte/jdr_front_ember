@@ -244,9 +244,7 @@ md-card {
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.4);
 }
 
-.fondDocument md-card {
-  display: -webkit-inline-box;
-  height: -webkit-fill-available; //a enlever si besoin
+.modelCarte md-card {
   padding: 10px;
   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.5) inset;
 }
