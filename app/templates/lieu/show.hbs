@@ -1,6 +1,7 @@
+<!--
 <div class="modelCarte layout-row layout-align-center">
   <div class="fondCarte">
-    {{#paper-card as |card|}}
+    {{#paper-card class="layout-row" as |card|}}
       <img class="card-media" src={{this.model.imgurl}} alt="img for lieu">
       {{#card.title as |title|}}
         {{#title.text as |text|}}
@@ -32,4 +33,38 @@
       {{/card.actions}}
     {{/paper-card}}
   </div>
+</div>
+-->
+
+<div class="modelCarte layout-row layout-align-center">
+  {{#paper-card class="card layout-row layout-xs-column" as |card|}}
+    <div class="lieu-img flex margin">
+      <img class="card-media" src={{this.model.imgurl}} alt="img for lieu">
+      <img class="card-media" src={{this.model.imgurl}} alt="img for lieu">
+      <img class="card-media" src={{this.model.imgurl}} alt="img for lieu">
+    </div>
+    <div class="margin flex">
+      {{#card.content}}
+      <div class="modelTitle">
+          <h3>{{this.model.title}}</h3>
+      </div>
+      <p>Histoire :</p>
+      <p class="modelDescription">{{this.model.histoire}}</p>
+      <p>Climat :</p>
+      <p class="modelDescription">{{this.model.climat}}</p>
+      <p>Emplacement :</p>
+      <p class="modelDescription">{{this.model.howto}}</p>
+      <p>{{this.model.hotstop}}</p>
+        {{#card.actions}}
+          {{#link-to "lieu.index"}}
+            <div class="btn-retour">
+              {{#paper-button}}
+                <p>Retour</p>
+              {{/paper-button}}
+            </div>
+          {{/link-to}}
+        {{/card.actions}}
+      {{/card.content}}
+    </div>
+  {{/paper-card}}
 </div>

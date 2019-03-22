@@ -211,6 +211,11 @@ md-card {
 }
 // List Model Carte
 
+.lieu-img .card-media {
+  height: 20%;
+  margin: 5px;
+}
+
 .modelCarte {
   margin: 0;
 }
@@ -236,6 +241,7 @@ md-card {
   background-color: #d6d6d6;
 }
 // Show Document
+
 .img-document {
   text-align: center;
 }
@@ -281,9 +287,11 @@ md-slider .md-track-container {
   border-radius: 20px;
   box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.6) inset;
 }
+
 .Mana .md-track {
   background-color: #6ed4cf !important;
 }
+
 .SantéMental .md-track {
   background-color: #bdb3f5 !important;
 }
@@ -291,7 +299,6 @@ md-slider .md-track-container {
 md-input-container .md-input {
   margin: 0 !important;
   width: 30%;
-
 }
 // button progress bar
 
@@ -311,9 +318,7 @@ md-slider .md-thumb:after {
 .little-margin div p {
   margin: 5px !important;
 }
-
 // nb stats
-
 .modelTitleTeam {
   width: 60%;
   text-align: center;
