@@ -37,13 +37,13 @@
 -->
 
 <div class="modelCarte layout-row layout-align-center">
-  {{#paper-card class="card layout-row layout-xs-column" as |card|}}
-    <div class="lieu-img flex margin">
+  {{#paper-card class="card layout-row layout-align-center" as |card|}}
+    <div class="lieu-img margin">
       <img class="card-media" src={{this.model.imgurl}} alt="img for lieu">
       <img class="card-media" src={{this.model.imgurl}} alt="img for lieu">
       <img class="card-media" src={{this.model.imgurl}} alt="img for lieu">
     </div>
-    <div class="margin flex">
+    <div class="margin">
       {{#card.content}}
       <div class="modelTitle">
           <h3>{{this.model.title}}</h3>
