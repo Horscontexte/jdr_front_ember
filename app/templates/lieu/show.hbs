@@ -38,10 +38,16 @@
 
 <div class="modelCarte layout-row layout-align-center">
   {{#paper-card class="card layout-row layout-align-center" as |card|}}
-    <div class="lieu-img margin">
+    <div class="lieu-img margin layout-align-center">
+      {{#if this.model.imgurl}}
       <img class="card-media" src={{this.model.imgurl}} alt="img for lieu">
+      {{/if}}
+      {{#if this.model.imgurl}}
       <img class="card-media" src={{this.model.imgurl}} alt="img for lieu">
+      {{/if}}
+      {{#if this.model.imgurl1}}
       <img class="card-media" src={{this.model.imgurl}} alt="img for lieu">
+      {{/if}}
     </div>
     <div class="margin">
       {{#card.content}}
