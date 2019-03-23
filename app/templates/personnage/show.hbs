@@ -19,7 +19,7 @@
       {{/title.text}}
       <div class="modelAvatar">
         {{#title.media size="md"}}
-          <img class="card-media" src={{this.model.imgurl}} alt="img for personnage">
+          {{#if this.model.imgurl}}<img src={{this.model.imgurl}} class="md-avatar card-media" alt={{item.model.title}}>{{else}} <img class="avatar-empty md-avatar" src="/img/avatar.png" alt="image avatar vide" >{{/if}}
         {{/title.media}}
       </div>
     {{/card.title}}

@@ -4,7 +4,7 @@
     {{#each model as |item|}}
       <div class="listCadre">
         {{#paper-item class="md-3-line" onClick=(action "transitionToPersonnage" item)}}
-          <img src={{item.imgurl}} alt={{item.title}} class="md-avatar">
+        {{#if item.imgurl}}<img src={{item.imgurl}} alt={{item.title}} class="md-avatar"> {{else}} <img class="avatar-empty md-avatar" src="/img/avatar.png" alt="image avatar vide" >{{/if}}
           <div class="linkText">
             {{#link-to "personnage.show" item class=item.id}}
               <div class="md-list-item-text">
